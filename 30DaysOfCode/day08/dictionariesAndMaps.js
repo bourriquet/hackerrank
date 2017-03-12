@@ -5,14 +5,14 @@ function processData(input) {
     var phonebook = {};
     
     for (var i = 0; i < N; i++) {
-        var S = inputArray.shift();
+        var S = inputArray[i];
         SArray = S.split(" ");
         
         phonebook[SArray[0]] = SArray[1];
     }
     
-    while (inputArray.length > 0) {
-        var S = inputArray.shift();
+    for (var i = N; i < inputArray.length; i++) {
+        var S = inputArray[i];
         
         if (!(S in phonebook)) {
             console.log("Not found");
@@ -25,8 +25,8 @@ function processData(input) {
 
 process.stdin.resume();
 process.stdin.setEncoding("ascii");
-
 _input = "";
+
 process.stdin.on("data", function (input) {
     _input += input;
 });
