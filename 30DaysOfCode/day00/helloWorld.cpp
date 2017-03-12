@@ -7,6 +7,7 @@
 using namespace std;
 
 int main() {
+    
     // Declare a variable named 'input_string' to hold our input.
     string input_string; 
     
@@ -20,4 +21,5 @@ int main() {
     cout << input_string << endl;
     
     return 0;
+    
 }
