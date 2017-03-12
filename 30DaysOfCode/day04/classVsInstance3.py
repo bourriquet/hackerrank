@@ -21,6 +21,7 @@ class Person:
         self.age += 1
         
 t = int(raw_input())
+
 for i in range(0, t):
     age = int(raw_input())         
     p = Person(age)  
