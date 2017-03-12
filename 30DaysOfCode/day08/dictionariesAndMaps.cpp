@@ -5,7 +5,6 @@
 
 using namespace std;
 
-
 int main() {
     int N;
     map<string, string> phonebook;
