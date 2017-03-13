@@ -8,8 +8,7 @@ string convertToBinary(int num) {
     string numBin = "";
     
     while (num != 0) {
-        int r;
-        r = num % 2;
+        int r = num % 2;
         
         ostringstream convert;
         convert << r;
