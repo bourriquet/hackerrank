@@ -7,7 +7,7 @@ class Node {
     public:
         int data;
         Node *next;
-        Node(int d){
+        Node(int d) {
             data = d;
             next = NULL;
         }
