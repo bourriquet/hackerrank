@@ -36,7 +36,7 @@ class Solution {
 };
 
 int main() {
-	Node* head = NULL;
+  Node* head = NULL;
   Solution mylist;
   int T, data;
   cin >> T;
