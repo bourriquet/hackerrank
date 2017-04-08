@@ -18,8 +18,9 @@ class MyBook(Book):
         print "Author:", self.author
         print "Price:", self.price
         
-title=raw_input()
-author=raw_input()
-price=int(raw_input())
-new_novel=MyBook(title,author,price)
+title = raw_input()
+author = raw_input()
+price = int(raw_input())
+
+new_novel = MyBook(title, author, price)
 new_novel.display()
