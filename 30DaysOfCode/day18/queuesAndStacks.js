@@ -54,7 +54,7 @@ function main() {
     for (var i = 0; i < len/2; i++) {
         if (obj.popCharacter() != obj.dequeueCharacter()) {
             isPalindrome = false;
-          	break;
+            break;
         }
     }
     
