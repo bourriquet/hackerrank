@@ -27,15 +27,15 @@ class Solution{
                     cur = insert(root->left, data);
                     root->left = cur;
                 }
-                else{
+                else {
                     cur = insert(root->right, data);
                     root->right = cur;
-               }
+                }
 
                return root;
-           }
+            }
         }
-        
+    
         int getHeight(Node* root){
             if (!root)
                 return -1;
