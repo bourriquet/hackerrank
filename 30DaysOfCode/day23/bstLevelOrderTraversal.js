@@ -8,7 +8,6 @@ function BinarySearchTree() {
     this.insert = function(root, data) {
         if (root === null) {
             this.root = new Node(data);
-            
             return this.root;
         }
         
