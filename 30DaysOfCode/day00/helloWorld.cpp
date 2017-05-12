@@ -14,5 +14,4 @@ int main() {
     cout << input_string << endl;
     
     return 0;
-    
 }
