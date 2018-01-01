@@ -11,6 +11,6 @@ public class Solution {
 		scan.close(); 
       
 		System.out.println("Hello, World.");
-    System.out.println(inputString);
+		System.out.println(inputString);
 	}
 }
