@@ -5,7 +5,6 @@ import java.math.*;
 import java.util.regex.*;
 
 public class Solution {
-	
     public static void main(String[] args) {
         int i = 4;
         double d = 4.0;
@@ -23,7 +22,7 @@ public class Solution {
         another_s = scan.nextLine();
 
         System.out.println(i + another_i);
-		    System.out.println(d + another_d);
+	System.out.println(d + another_d);
         System.out.println(s + another_s);
         
         scan.close();
