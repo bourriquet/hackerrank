@@ -10,12 +10,10 @@ process.stdin.on('end', () => {
 });
 
 function main(mealCost, tipPercent, taxPercent) {
-
     var tip = 0.01 * tipPercent * mealCost;
     var tax = 0.01 * taxPercent * mealCost;
 
     var totalCost = Math.round(mealCost + tip + tax);
 
     console.log("The total meal cost is " + totalCost + " dollars.");
-    
 }
