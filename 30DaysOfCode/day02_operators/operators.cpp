@@ -4,7 +4,6 @@
 using namespace std;
 
 int main() {
-
     double mealCost;
     int tipPercent, taxPercent;
     
@@ -18,5 +17,4 @@ int main() {
     cout << "The total meal cost is " << totalCost << " dollars." << endl;
     
     return 0;
-    
 }
