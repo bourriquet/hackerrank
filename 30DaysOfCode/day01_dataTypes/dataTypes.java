@@ -12,14 +12,10 @@ public class Solution {
 		
         Scanner scan = new Scanner(System.in);
         
-        int another_i;
-        double another_d;
-        String another_s;
-
-        another_i = scan.nextInt();
-        another_d = scan.nextDouble();
-        scan.nextLine();
-        another_s = scan.nextLine();
+        int another_i = scan.nextInt();
+        double another_d = scan.nextDouble();
+	scan.nextLine();
+        String another_s = scan.nextLine();
 
         System.out.println(i + another_i);
 	System.out.println(d + another_d);
