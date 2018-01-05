@@ -5,14 +5,11 @@
 
 int main() {
     double mealCost;
-    int tipPercent, taxPercent;
+    int tip, tax;
     
-    scanf("%lf %d %d", &mealCost, &tipPercent, &taxPercent);
+    scanf("%lf %d %d", &mealCost, &tip, &tax);
     
-    double tip = 0.01 * tipPercent * mealCost;
-    double tax = 0.01 * taxPercent * mealCost;
-    
-    int totalCost = round(mealCost + tip + tax);
+    int totalCost = round(mealCost + (0.01 * tip * mealCost) + (0.01 * tax * mealCost));
     
     printf("The total meal cost is %d dollars.", totalCost);
     
