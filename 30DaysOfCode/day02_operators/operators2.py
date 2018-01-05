@@ -1,12 +1,9 @@
 def get_total_cost_of_meal():
     meal_cost = float(raw_input())
-    tip_percent = int(raw_input())
-    tax_percent = int(raw_input())
-    
-    tip = 0.01 * tip_percent * meal_cost
-    tax = 0.01 * tax_percent * meal_cost
+    tip = int(raw_input())
+    tax = int(raw_input())
 
-    total_cost = int(round(meal_cost + tip + tax))
+    total_cost = int(round(meal_cost + (0.01 * tip * meal_cost) + (0.01 * tax * meal_cost)))
     
     return str(total_cost)
 
