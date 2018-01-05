@@ -5,14 +5,11 @@ using namespace std;
 
 int main() {
     double mealCost;
-    int tipPercent, taxPercent;
+    int tip, tax;
     
-    cin >> mealCost >> tipPercent >> taxPercent;
+    cin >> mealCost >> tip >> tax;
     
-    double tip = 0.01 * tipPercent * mealCost;
-    double tax = 0.01 * taxPercent * mealCost;
-    
-    double totalCost = round(mealCost + tip + tax);
+    double totalCost = round(mealCost + (0.01 * tip * mealCost) + (0.01 * tax * mealCost));
     
     cout << "The total meal cost is " << totalCost << " dollars." << endl;
     
