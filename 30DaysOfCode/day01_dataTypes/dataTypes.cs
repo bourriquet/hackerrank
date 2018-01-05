@@ -8,13 +8,9 @@ class Solution {
         double d = 4.0;
         string s = "HackerRank ";
         
-        int another_i;
-        double another_d;
-        string another_s;
-
-        another_i = Convert.ToInt32(Console.ReadLine());
-        another_d = Convert.ToDouble(Console.ReadLine());
-        another_s = Console.ReadLine();
+        int another_i = Convert.ToInt32(Console.ReadLine());;
+        double another_d = Convert.ToInt32(Console.ReadLine());
+        string another_s = Console.ReadLine();
 
         Console.WriteLine(i + another_i);
         Console.WriteLine(String.Format("{0:0.0}", d + another_d));
