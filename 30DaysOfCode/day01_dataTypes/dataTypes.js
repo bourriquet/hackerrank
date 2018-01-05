@@ -23,11 +23,9 @@ function main() {
     var d = 4.0
     var s = "HackerRank "
     
-    var another_i, another_d, another_s;
-
-    another_i = readLine();
-    another_d = readLine();
-    another_s = readLine();
+    var another_i = readLine();
+    var another_d = readLine();
+    var another_s = readLine();
 
     console.log(i + parseInt(another_i));
     console.log((d + (parseFloat(another_d))).toFixed(1));
