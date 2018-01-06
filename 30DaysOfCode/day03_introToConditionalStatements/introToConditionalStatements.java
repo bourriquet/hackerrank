@@ -13,7 +13,7 @@ public class Solution {
       if (n % 2 == 1) {
           System.out.println("Weird");
       }
-      else{
+      else {
           if (n >= 2 && n <= 5) {
               System.out.println("Not Weird");
           }
