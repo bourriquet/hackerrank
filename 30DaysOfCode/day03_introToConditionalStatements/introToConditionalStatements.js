@@ -19,7 +19,6 @@ function readLine() {
 }
 
 function main() {
-    
     var N = parseInt(readLine());
 
     if (N % 2 == 1) {
