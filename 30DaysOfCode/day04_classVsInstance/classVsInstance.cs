@@ -5,7 +5,7 @@ using System.IO;
 class Person {
     public int age;
     
-	  public Person(int initialAge) {
+    public Person(int initialAge) {
         if (initialAge < 0) {
             this.age = 0;
             Console.WriteLine("Age is not valid, setting age to 0.");
@@ -14,6 +14,7 @@ class Person {
             this.age = initialAge;
         }
     }
+	
     public void amIOld() {
         if (this.age < 13) {
             Console.WriteLine("You are young.");
@@ -32,14 +33,18 @@ class Person {
 }
 
 static void Main(String[] args) {
-    int T=int.Parse(Console.In.ReadLine());
+    int T = int.Parse(Console.In.ReadLine());
+	
     for (int i = 0; i < T; i++) {
-        int age=int.Parse(Console.In.ReadLine());
-        Person p=new Person(age);
+        int age = int.Parse(Console.In.ReadLine());
+        Person p = new Person(age);
+	    
         p.amIOld();
+	    
         for (int j = 0; j < 3; j++) {
             p.yearPasses();
         }
+	    
         p.amIOld();
         Console.WriteLine();
      }
