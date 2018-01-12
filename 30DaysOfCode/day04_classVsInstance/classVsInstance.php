@@ -1,28 +1,28 @@
 <?php
 class Person {
    public $age;
-   public function __construct($initialAge){
+   public function __construct($initialAge) {
         if ($initialAge < 0) {
             echo "Age is not valid, setting age to 0.\n";
             $this->age = intval(0);
         }
-       else {
-           $this->age = $initialAge;
-       }
+        else {
+            $this->age = $initialAge;
+        }
     }
-   public  function amIOld(){
-            if ($this->age < 13) {
-                echo "You are young.\n";
-            }
-            else if ($this->age >= 13 && $this->age < 18) {
-                echo "You are a teenager.\n";
-            }
-            else {
-                echo "You are old.\n";
-            }
+    public function amIOld(){
+        if ($this->age < 13) {
+            echo "You are young.\n";
+        }
+        else if ($this->age >= 13 && $this->age < 18) {
+            echo "You are a teenager.\n";
+        }
+        else {
+            echo "You are old.\n";
+        }
     }
-   public  function yearPasses(){
-          $this->age++;
+    public  function yearPasses(){
+        $this->age++;
     }   
 }
 
@@ -35,6 +35,7 @@ for ($i = 0; $i < $T; $i++) {
      for ($j = 0; $j < 3; $j++) {
          $p->yearPasses();
      }
+   
      $p->amIOld();
      echo "\n";  
 }
