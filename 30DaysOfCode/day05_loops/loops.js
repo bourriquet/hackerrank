@@ -22,8 +22,6 @@ function main() {
     var n = parseInt(readLine());
     
     for (var i = 1; i <= 10; i++) {
-        var x = i * n;
-        
-        console.log(n + " x " + i + " = " + x);
+        console.log(n + " x " + i + " = " + (n * i);
     }
 }
