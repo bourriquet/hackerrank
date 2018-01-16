@@ -1,8 +1,6 @@
 #!/bin/python3
 
 n = int(input().strip())
-x = range(1, 11)
 
-for i in x:
-    res = n * i
-    print(n, "x", i, "=", res)
+for i in range(1, 11):
+    print(n, "x", i, "=", (n * i))
