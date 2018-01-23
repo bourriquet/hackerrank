@@ -10,9 +10,6 @@ for i in range(0, N):
 lines = sys.stdin.readlines()
 for line in lines:
     if line.strip() in phonebook:
-        sys.stdout.write(line.strip())
-        sys.stdout.write("=")
-        sys.stdout.write(phonebook[line.strip()])
-        sys.stdout.write("\n")
+        print "%s=%s" %(line.strip(), phonebook[line.strip()])
     else:
         print "Not found"
