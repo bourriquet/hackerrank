@@ -10,8 +10,6 @@ for i in range(0, N):
 lines = sys.stdin.readlines()
 for line in lines:
     if line.strip() in phonebook:
-        print(line.strip(), end="")
-        print("=", end="")
-        print(phonebook[line.strip()])
+        print(line.strip(), "=", phonebook[line.strip()], sep="")
     else:
         print("Not found")
