@@ -8,7 +8,7 @@ function factorial($n) {
     return $n * factorial($n - 1);
 }
 
-fscanf($handle, "%i",$n);
+fscanf($handle, "%i", $n);
 $result = factorial($n);
 echo $result . "\n";
 
