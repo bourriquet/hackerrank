@@ -18,43 +18,25 @@ function readLine() {
     return input_stdin_array[input_currentline++];
 }
 
-function convertToBinary(num) {
-    var numBin = "";
-    
-    while (num != 0) {
-        var r = num % 2;
-        numBin += r;
-        num = parseInt(num /= 2);
-    }
-    
-    return numBin;
-}
-
-function consecutiveOnes(num) {
-    var numBin = convertToBinary(num);
-    
-    var count = 0;
-    var max = 0;
-    
-    for (var i = 0; i < numBin.length; i++) {
-        if (numBin[i] === '1') {
-            count++;
-        }
-        else {
-            count = 0;
-        }
-        
-        if (count > max) {
-            max = count;
-        }
-    }
-    
-    return max;
-}
-
 function main() {
     var n = parseInt(readLine());
     
-    console.log(consecutiveOnes(n));
-
+    var max = 0;
+    var count = 0;
+    
+    while (n > 0) {
+        if (n % 2 == 1) {
+            count++;
+            if (count > max) {
+                max = count;
+            }
+        } else {
+            count = 0;
+        }
+        
+        n = parseInt(n / 2);
+    }
+    
+    console.log(max);
 }
+
