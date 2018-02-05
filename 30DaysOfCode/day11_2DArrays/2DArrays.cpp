@@ -11,7 +11,6 @@ int main(){
        }
     }
     
-    // absolute lowest result
     int max = (-9 * 7);
     
     for (int i = 0; i < 4; i++) {
