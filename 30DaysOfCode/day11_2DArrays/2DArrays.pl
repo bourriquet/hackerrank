@@ -11,7 +11,7 @@ while($arr_i < 6){
    $arr_i++;
 }
 
-$max = 0;
+$max = (-9 * 7);
 
 for ($i = 0; $i < 4; $i++) {
     for ($j = 0; $j < 4; $j++) {
