@@ -6,12 +6,12 @@ class Person {
   protected int idNumber;
 	
   Person(String firstName, String lastName, int identification){
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.idNumber = identification;
-	}
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.idNumber = identification;
+  }
 	
-	public void printPerson(){
+  public void printPerson(){
     System.out.println("Name: " + lastName + ", " + firstName + "\nID: " + idNumber); 
   }
 }
@@ -32,36 +32,36 @@ class Student extends Person{
     }
     scoreAvg /= testScores.length;
             
-		if (scoreAvg >= 90 && scoreAvg <= 100)
+    if (scoreAvg >= 90 && scoreAvg <= 100)
       return 'O';
-		else if (scoreAvg >= 80 && scoreAvg < 90)
+    else if (scoreAvg >= 80 && scoreAvg < 90)
       return 'E';
-		else if (scoreAvg >= 70 && scoreAvg < 80)
-			return 'A';
-		else if (scoreAvg >= 55 && scoreAvg < 70)
-			return 'P';                
-		else if (scoreAvg >= 40 && scoreAvg < 55)
-			return 'D';                
-		return 'T';
+    else if (scoreAvg >= 70 && scoreAvg < 80)
+      return 'A';
+    else if (scoreAvg >= 55 && scoreAvg < 70)
+      return 'P';                
+    else if (scoreAvg >= 40 && scoreAvg < 55)
+      return 'D';                
+    return 'T';
   }
 }
 
 class Solution {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
-		String firstName = scan.next();
-		String lastName = scan.next();
-		int id = scan.nextInt();
-		int numScores = scan.nextInt();
-		int[] testScores = new int[numScores];
+    String firstName = scan.next();
+    String lastName = scan.next();
+    int id = scan.nextInt();
+    int numScores = scan.nextInt();
+    int[] testScores = new int[numScores];
     
-		for(int i = 0; i < numScores; i++){
-			testScores[i] = scan.nextInt();
-		}
-		scan.close();
+    for(int i = 0; i < numScores; i++){
+      testScores[i] = scan.nextInt();
+    }
+    scan.close();
 		
-		Student s = new Student(firstName, lastName, id, testScores);
-		s.printPerson();
-		System.out.println("Grade: " + s.calculate() );
-	}
+    Student s = new Student(firstName, lastName, id, testScores);
+    s.printPerson();
+    System.out.println("Grade: " + s.calculate() );
+  }
 }
