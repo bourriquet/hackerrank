@@ -39,10 +39,10 @@ int main() {
     vector<int> a;
     
     for (int i = 0; i < N; i++) {
-        int e;
-        cin >> e;
-        
-        a.push_back(e);
+      int e;
+      cin >> e;
+      
+      a.push_back(e);
     }
     
     Difference d(a);
