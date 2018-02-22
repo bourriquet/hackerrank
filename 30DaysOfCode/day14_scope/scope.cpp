@@ -14,21 +14,12 @@ class Difference {
     int maximumDifference;
     
     Difference(vector<int> a) {
-      elements = a;
+        elements = a;
+        sort(elements.begin(), elements.end());
     }
 
     void computeDifference() {
-      int minNum = 10;
-      int maxNum = 1;
-        
-      for (int i = 0; i < elements.size(); i++) {
-        if (elements[i] < minNum)
-          minNum = elements[i];
-        if (elements[i] > maxNum)
-          maxNum = elements[i];
-      }
-        
-      maximumDifference = (maxNum - minNum);
+        maximumDifference = abs(elements[elements.size() - 1] - elements[0]);
     }
 };
 
