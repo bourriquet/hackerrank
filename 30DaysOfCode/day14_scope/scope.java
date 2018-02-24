@@ -6,8 +6,8 @@ import java.util.regex.*;
 
 
 class Difference {
-  	private int[] elements;
-  	public int maximumDifference;
+    private int[] elements;
+    public int maximumDifference;
     
     Difference(int[] elems) {
         elements = elems;
