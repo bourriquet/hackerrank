@@ -14,7 +14,7 @@ class Difference{
 }
 
 $N=intval(fgets(STDIN));
-$a =array_map('intval', explode(' ', fgets(STDIN)));
+$a=array_map('intval', explode(' ', fgets(STDIN)));
 
 $d=new Difference($a);
 $d->ComputeDifference();
