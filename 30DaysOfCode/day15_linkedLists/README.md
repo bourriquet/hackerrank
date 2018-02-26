@@ -1,4 +1,4 @@
-# Linked List
+# Linked Lists
 
 ### Task
 
