@@ -15,15 +15,21 @@ class Node {
 
 class Solution {
   public:
-    Node* insert(Node *head, int data) {
-      Node** a = &head;
-
-      while (*a) {
-        a = &((*a)->next);
+    Node* insert(Node *head, int data) {   
+      Node *newNode = new Node(data);
+          
+      if (head == NULL) {
+        return newNode;
+      } else {
+        Node *node = head;
+              
+        while (node->next != NULL) {
+          node = node->next;
+        }
+        node->next = newNode;
+              
+        return head;
       }
-
-      *a = new Node(data);
-      return head;
     }
       
     void display(Node *head) {
