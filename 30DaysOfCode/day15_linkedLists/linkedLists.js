@@ -24,23 +24,21 @@ function Node(data) {
 }
 
 function Solution() {
-    this.insert = function(head,data){
-        var a = new Node(data);
+    this.insert=function(head,data){
+        var newNode = new Node(data);
         
         if (head === null) {
-            head = a;
-        }
-        else if (head.next === null) {
-            head.next = a;
-        }
-        else {
-            var nextNode = head.next;
-            while (nextNode.next) {
-                nextNode = nextNode.next;
+            return newNode;
+        } else {
+            var node = head;
+            
+            while (node.next !== null) {
+                node = node.next;
             }
-            nextNode.next = a;
+            node.next = newNode;
+            
+            return head;
         }
-        return head;
     };
     
     this.display = function(head){
