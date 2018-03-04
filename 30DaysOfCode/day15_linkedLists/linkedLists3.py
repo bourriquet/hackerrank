@@ -10,20 +10,19 @@ class Solution:
             print(current.data, end=' ')
             current = current.next
             
-    def insert(self,head,data): 
-        a = Node(data)
+    def insert(self, head, data): 
+        newNode = Node(data)
         
         if (head == None):
-            head = a
-        elif (head.next == None):
-            head.next = a
+            return newNode
         else:
-            nextNode = head.next
-            while (nextNode.next):
-                nextNode = nextNode.next
-            nextNode.next = a
+            node = head
             
-        return head
+            while (node.next):
+                node = node.next
+            node.next = newNode
+            
+            return head 
         
 mylist = Solution()
 T = int(input())
