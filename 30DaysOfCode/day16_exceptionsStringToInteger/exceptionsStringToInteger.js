@@ -23,7 +23,7 @@ function main() {
     
     try {
         var s = eval(line);
-        console.log(s);
+        console.log(line);
     }
     catch (e) {
         console.log("Bad String");
