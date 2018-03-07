@@ -22,8 +22,7 @@ function main() {
     var line = readLine();
     
     try {
-        var s = eval(line);
-        console.log(line);
+        console.log(eval(line));
     }
     catch (e) {
         console.log("Bad String");
