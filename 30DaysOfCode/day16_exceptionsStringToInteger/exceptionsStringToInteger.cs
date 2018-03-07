@@ -8,8 +8,7 @@ class Solution {
         string S = Console.ReadLine();
         
         try {
-            Int32.Parse(S);
-            Console.WriteLine(S);
+            Console.WriteLine(Int32.Parse(S));
         } catch (FormatException) {
             Console.WriteLine("Bad String");
         }
