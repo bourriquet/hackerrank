@@ -7,8 +7,7 @@ int main(){
     cin >> S;
     
     try {
-        stoi(S);
-        cout << S << endl;
+        cout << stoi(S) << endl;
     }
     catch (const exception &e) {
         cout << "Bad String" << endl;
