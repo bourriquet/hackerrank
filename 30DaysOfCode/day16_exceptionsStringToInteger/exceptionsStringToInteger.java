@@ -7,8 +7,7 @@ public class Solution {
         String S = in.next();
         
         try {
-            Integer.parseInt(S);
-            System.out.println(S);
+            System.out.println(Integer.parseInt(S));
         } catch (NumberFormatException e) {
             System.out.println("Bad String");
         }
