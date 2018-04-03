@@ -15,10 +15,7 @@ class Solution {
         if (root == null)
             return -1;
         
-        int leftDepth = getHeight(root.left);
-        int rightDepth = getHeight(root.right);
-        
-        return (leftDepth > rightDepth ? leftDepth : rightDepth) + 1;
+        return Math.max(getHeight(root.left), getHeight(root.right)) + 1;
     }
     
     public static Node insert(Node root, int data) {
