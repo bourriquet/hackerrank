@@ -16,15 +16,17 @@ class Node {
 
 class Solution {
     static void levelOrder(Node root){
-        List<Node> q = new List<Node>();
+  		List<Node> q = new List<Node>();
         q.Add(root);
         
         while (q.Count > 0) {
-            Console.Write(q[0].data + " ");
-            if (q[0].left != null)
-                q.Add(q[0].left);
-            if (q[0].right != null)
-                q.Add(q[0].right);
+            Node firstNode = q[0];
+            Console.Write(firstNode.data + " ");
+            
+            if (firstNode.left != null)
+                q.Add(firstNode.left);
+            if (firstNode.right != null)
+                q.Add(firstNode.right);
             
             if (q.Count > 0) {
                 q.RemoveAt(0);
