@@ -28,9 +28,7 @@ class Solution {
             if (firstNode.right != null)
                 q.Add(firstNode.right);
             
-            if (q.Count > 0) {
-                q.RemoveAt(0);
-            }
+            q.RemoveAt(0);
         }
     }
     
