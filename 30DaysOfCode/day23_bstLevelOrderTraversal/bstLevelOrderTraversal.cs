@@ -16,7 +16,7 @@ class Node {
 
 class Solution {
     static void levelOrder(Node root){
-  		List<Node> q = new List<Node>();
+        List<Node> q = new List<Node>();
         q.Add(root);
         
         while (q.Count > 0) {
