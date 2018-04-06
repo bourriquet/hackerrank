@@ -29,21 +29,19 @@ function BinarySearchTree() {
     };
     
     this.levelOrder = function(root) {
-        var n = root;
         var q = [];
+        q.push(root);
 
-        while(n) {
-            process.stdout.write(n.data + " ");
+        while (q.length > 0) {
+            var firstNode = q[0];
+            process.stdout.write(firstNode.data + " ");
             
-            if (n.left)
-                q.push(n.left);
-            if (n.right)
-                q.push(n.right);
+            if (firstNode.left)
+                q.push(firstNode.left);
+            if (firstNode.right)
+                q.push(firstNode.right)
             
-            if (q.length > 0)
-                n = q.shift();
-            else
-                n = null;
+            q.shift();
         }
     };
 };
