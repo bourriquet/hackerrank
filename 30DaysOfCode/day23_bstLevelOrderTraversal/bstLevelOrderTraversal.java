@@ -17,15 +17,13 @@ class Solution {
         q.add(root);
     
         while (q.size() > 0) {
-            Node firstNode = q.peek();
+            Node firstNode = q.poll();
             System.out.print(firstNode.data + " ");
             
             if (firstNode.left != null)
                 q.add(firstNode.left);
             if (firstNode.right != null)
                 q.add(firstNode.right);
-            
-            q.poll();
         }
     }
     
