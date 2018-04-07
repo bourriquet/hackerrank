@@ -33,15 +33,13 @@ function BinarySearchTree() {
         q.push(root);
 
         while (q.length > 0) {
-            var firstNode = q[0];
+            var firstNode = q.shift();
             process.stdout.write(firstNode.data + " ");
             
             if (firstNode.left)
                 q.push(firstNode.left);
             if (firstNode.right)
                 q.push(firstNode.right)
-            
-            q.shift();
         }
     };
 };
