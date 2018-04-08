@@ -18,23 +18,20 @@ class Solution:
                 root.right = cur
         return root
     
-    def levelOrder(self, root):
-        n = root
+    def levelOrder(self,root):
         q = []
+        q.append(root)
         
-        while n:
-            sys.stdout.write(str(n.data))
-            sys.stdout.write(" ")
+        while (len(q) > 0):
+            first_node = q[0]
+            sys.stdout.write(str(first_node.data) + " ")
             
-            if n.left:
-                q.append(n.left)
-            if n.right:
-                q.append(n.right)
-                
-            if len(q) > 0:
-                n = q.pop(0)
-            else:
-                n = None
+            if (first_node.left):
+                q.append(first_node.left)
+            if (first_node.right):
+                q.append(first_node.right)
+            
+            q.pop(0)
 
 
 T = int(raw_input())
