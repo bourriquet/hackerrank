@@ -23,16 +23,13 @@ class Solution:
         q.append(root)
         
         while (len(q) > 0):
-            first_node = q[0]
+            first_node = q.pop(0)
             sys.stdout.write(str(first_node.data) + " ")
             
             if (first_node.left):
                 q.append(first_node.left)
             if (first_node.right):
                 q.append(first_node.right)
-            
-            q.pop(0)
-
 
 T = int(raw_input())
 myTree = Solution()
