@@ -18,22 +18,20 @@ class Solution:
                 root.right = cur
         return root
         
-    def levelOrder(self, root):
-        n = root
+    def levelOrder(self,root):
         q = []
+        q.append(root)
         
-        while n:
-            print(n.data, end=' ')
+        while (len(q) > 0):
+            first_node = q[0]
+            print(first_node.data, end=" ")
             
-            if n.left:
-                q.append(n.left)
-            if n.right:
-                q.append(n.right)
-                
-            if len(q) > 0:
-                n = q.pop(0)
-            else:
-                n = None
+            if (first_node.left):
+                q.append(first_node.left)
+            if (first_node.right):
+                q.append(first_node.right)
+            
+            q.pop(0)
                 
 T = int(input())
 myTree = Solution()
