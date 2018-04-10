@@ -19,17 +19,13 @@ class Node {
 
 class Solution {
   public:
-    Node* removeDuplicates(Node* head) {
-        if (head == NULL) {
-            return head;
-        }
-              
+    Node* removeDuplicates(Node* head) {    
         Node* currentNode = head;
               
         while (currentNode->next != NULL) {
             Node* nextNode = currentNode->next;
             if (nextNode->data == currentNode->data) {
-                currentNode->next = (currentNode->next)->next;
+                currentNode->next = nextNode->next;
             } else {
                 currentNode = currentNode->next;
             }
