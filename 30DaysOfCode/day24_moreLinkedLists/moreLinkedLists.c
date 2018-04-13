@@ -19,7 +19,7 @@ Node* removeDuplicates(Node* head){
         if (nextNode->data == currentNode->data) {
             currentNode->next = nextNode->next;
         } else {
-            currentNode = currentNode->next;
+            currentNode = nextNode;
         }
     }
     
