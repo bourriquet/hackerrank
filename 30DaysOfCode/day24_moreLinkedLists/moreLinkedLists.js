@@ -40,20 +40,19 @@ function Solution() {
         return head;
     }
     
-    this.insert=function(head,data){
-        var p=new Node(data);
-        if(head==null){
-            head=p;
-        }
-        else if(head.next==null){
-            head.next=p;
-        }
-        else{
-            var start=head;
-            while(start.next!=null){
-                start=start.next;
+    this.insert = function(head, data) {
+        var p = new Node(data);
+        if (head == null) {
+            head = p;
+        } else if (head.next == null) {
+            head.next = p;
+        } else {
+            var start = head;
+            
+            while (start.next != null) {
+                start = start.next;
             }
-            start.next=p;
+            start.next = p;
         }
         return head;
         
