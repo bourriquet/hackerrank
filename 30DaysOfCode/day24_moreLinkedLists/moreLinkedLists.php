@@ -44,8 +44,8 @@ class Solution {
     function display($head) {
         $start = $head;
         while ($start) {
-           echo $start->data, ' ';
-           $start = $start->next;
+            echo $start->data, ' ';
+            $start = $start->next;
         }
     }
 }
