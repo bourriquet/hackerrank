@@ -17,12 +17,12 @@ int main() {
         
         if (num < 2) {
             cout << "Not prime" << endl;
-        } else if (num == 2) {
+        } else if (num <= 3) {
             cout << "Prime" << endl;
-        } else if (num % 2 == 0) {
+        } else if (num % 2 == 0 || num % 3 == 0) {
             cout << "Not prime" << endl;
         } else {
-            for (int i = 3; i < num/2; i += 2) {
+            for (int i = 5; i <= sqrt(num); i += 2) {
                 if (num % i == 0) {
                     cout << "Not prime" << endl;
                     flag = false;
