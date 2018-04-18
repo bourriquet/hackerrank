@@ -20,7 +20,7 @@ int main() {
         } else if (num % 2 == 0 || num % 3 == 0) {
             printf("Not prime\n");
         } else {
-            for (int i = 5; i <= sqrt(num); i++) {
+            for (int i = 5; i <= sqrt(num); i += 2) {
                 if (num % i == 0) {
                     printf("Not prime\n");
                     flag = false;
