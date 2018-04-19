@@ -18,10 +18,11 @@ public class Solution {
             } else if (num % 2 == 0 || num % 3 == 0) {
                 System.out.println("Not prime");
             } else {
-                for (int j = 5; j < Math.sqrt(num); j += 2) {
+                for (int j = 5; j <= Math.sqrt(num); j += 2) {
                     if (num % j == 0) {
                         System.out.println("Not prime");
                         flag = false;
+                        break;
                     }
                 }
                 
