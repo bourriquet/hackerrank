@@ -7,12 +7,8 @@ int main() {
     int dayReturned, monthReturned, yearReturned;
     int dayExpected, monthExpected, yearExpected;
     
-    scanf("%d", &dayReturned);
-    scanf("%d", &monthReturned);
-    scanf("%d", &yearReturned);
-    scanf("%d", &dayExpected);
-    scanf("%d", &monthExpected);
-    scanf("%d", &yearExpected);
+    scanf("%d %d %d", &dayReturned, &monthReturned, &yearReturned);
+    scanf("%d %d %d", &dayExpected, &monthExpected, &yearExpected);
     
     if (yearReturned > yearExpected) {
         printf("%d", 10000);
