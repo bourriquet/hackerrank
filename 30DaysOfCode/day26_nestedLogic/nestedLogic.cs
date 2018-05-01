@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+
 class Solution {
     static void Main(String[] args) {
         string[] date1 = Console.ReadLine().Split(' ');
