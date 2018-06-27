@@ -5,7 +5,6 @@ import java.math.*;
 import java.util.regex.*;
 
 public class Solution {
-  
     public static String getSmallestAndLargest(String s, int k) {
         String smallest = s.substring(0, k);
         String largest = s.substring(0, k);
